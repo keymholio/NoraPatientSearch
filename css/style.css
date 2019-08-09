@@ -23,7 +23,7 @@ header {
   justify-content: center;
 }
 
-header .circle-btn {
+.circle-btn {
 	width: 76px;
 	height:76px;
 	background-color: #009ADF;
@@ -84,5 +84,49 @@ header .circle-btn {
   width: 100%;
 }
 
+
+/* result page */
+
+.result-header {
+  text-align: center;
+  margin-top: 1.5rem;
+  font-size: 1.25rem;
+  color: #34383C;
+  height: 50px;
+}
+
+.result-header .patient-details {
+  font-size: 1rem;
+  color: #717376;
+  margin-top: 0.5rem;
+}
+
+.result-content {
+  background-color: #ffffff;
+  margin-top: 1rem;
+  text-align: center;
+  height: 310px;
+}
+
+.result-content .name {
+  padding-top: 3rem;
+  font-size: 2rem;
+}
+
+.result-content .range, .lab-date {
+  color: #717376;
+  padding-top: 0.5rem;
+}
+
+.result-content .level {
+  font-size: 1.75rem;
+  font-weight: 700;
+  padding-top: 2.75rem;
+  color: #3CAD2B;
+}
+
+.result-content .level.bad {
+  color: #E33D2E;
+}
 
 
