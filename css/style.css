@@ -129,4 +129,14 @@ header {
   color: #E33D2E;
 }
 
+.level-wrapper {
+	display:flex;
+	align-items: center;
+}
+
+.level-wrapper img {
+	margin-right: 0.5em;
+	width: 24px;
+}
+
 

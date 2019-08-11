@@ -23,3 +23,32 @@ $(function() {
      });
 });
 
+var pos = 0;
+//page = document.getElementById("main");
+
+document.addEventListener('rotarydetent', function(ev) {
+    /* Get the direction value from the event */
+//	var popupTarget = ev.target;
+//	var popup = popupTarget.getElementById('main');
+    var direction = ev.detail.direction;
+    var SCROLL_STEP = 50;
+
+    if (direction == 'CW') {
+        /* Add behavior for clockwise rotation */
+    		//$(window).scrollTop(y);
+    		pos = pos + 50;
+    		$('#main').scrollTop(pos);
+        console.log('clockwise' +  pos);
+    } else if (direction == 'CCW') {
+        /* Add behavior for counter-clockwise rotation */
+        
+        //$(window).scrollTop(y);
+    		pos = pos - 50;
+        $('#main').scrollTop(pos);
+        console.log('counter-clockwise' + pos);
+    }
+});
+
+
+
+
